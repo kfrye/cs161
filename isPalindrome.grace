@@ -1,10 +1,11 @@
-//Write a function that tests whether a string is a palindrome.
+//Write a function that tests whether a string 
+//is a palindrome.
 
 method isPalindrome(myString) {
     var first := 1
-    var second := myString.size - 1
+    var second := myString.size
     while {first < second} do {
-        if(myString.at(first) == myString.at(second)) then {
+        if(myString.at(first) != myString.at(second)) then {
             return false
         }
         first := first + 1
@@ -13,4 +14,4 @@ method isPalindrome(myString) {
     return true
 }
 
-print(isPalindrome("aabaa"))
+print(isPalindrome("abcba"))
